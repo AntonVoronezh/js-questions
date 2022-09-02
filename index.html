@@ -114,8 +114,43 @@
     // dog
 
 
+    // Вопрос № 10
+    function Person(firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
 
+    const person = new Person("John", "Smith")
+    Person.getFullName = function () {
+        return `${this.firstName} ${this.lastName}`
+    }
 
+    console.log(person.getFullName())
+
+    // ошибка
+
+    // Вопрос № 11
+    function Person(firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
+
+    const john = new Person("John", "Smith")
+    const jane = Person("Jane", "Air")
+
+    console.log(john)
+    console.log(jane)
+
+    // Person {firstName: "John", lastName: "Smith"} и undefined
+
+    // Вопрос № 12
+    function sum(a, b) {
+        return a + b
+    }
+
+    console.log(sum(1, "2"))
+
+//    12
 
 </script>
 </body>
