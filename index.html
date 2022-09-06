@@ -161,6 +161,22 @@
 
 //    0 2 2
 
+    // Вопрос № 14 - Теговый шаблон - – это функция, которая позволяет разбирать шаблонную строку
+    function getPersonInfo(one, two, three) {
+        console.log(one)
+        console.log(two)
+        console.log(three)
+    }
+
+    const person = "John"
+    const age = 30
+
+    getPersonInfo`${person} is ${age} years old`
+
+//     ["", " is ", " years old"] John 30
+
+
+
 </script>
 </body>
 </html>
