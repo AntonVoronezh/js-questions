@@ -248,6 +248,92 @@
 
 
 
+    // Вопрос № 21
+    const obj = { a: "one", b: "two", a: "three" }
+    console.log(obj)
+
+    // { a: "three", b: "two" }
+
+
+    // Вопрос № 22
+    for (let i = 1; i < 5; i++) {
+        if (i === 3) continue
+        console.log(i)
+    }
+
+    // 1 2 4
+
+
+    // Вопрос № 23
+    String.prototype.giveMePizza = () => {
+        return "Give me pizza!"
+    }
+
+    const name = "John"
+
+    console.log(name.giveMePizza())
+
+    // Give me pizza!
+
+
+    // Вопрос № 24
+    const a = {}
+    const b = { key: "b" }
+    const c = { key: "c" }
+
+    a[b] = 123
+    a[c] = 456
+
+    console.log(a[b])
+
+    // 456
+
+
+    // Вопрос № 25
+    const foo = () => console.log("first")
+    const bar = () => setTimeout(() => console.log("second"))
+    const baz = () => console.log("third")
+
+    bar()
+    foo()
+    baz()
+
+    // first third second
+
+
+    // Вопрос № 26
+    <div onclick="console.log('div')">
+        <p onclick="console.log('p')">
+        Нажми меня!
+    </p>
+    </div>
+
+    // p div
+
+
+    // Вопрос № 27
+    const person = { name: "John" }
+
+    function sayHi(age) {
+        console.log(`${this.name} is ${age}`)
+    }
+
+    sayHi.call(person, 30)
+    sayHi.bind(person, 30)
+
+    // John is 30 и function
+
+
+    // Вопрос № 28
+    function sayHi() {
+        return (() => 0)()
+    }
+
+    console.log(typeof sayHi())
+
+    // number
+
+
 
 
 </script>
