@@ -348,6 +348,45 @@
         // [1, 2, 3, 7 x empty, 11]
 
 
+    // Вопрос № 31
+    (() => {
+        let x, y
+        try {
+            throw new Error()
+        } catch (x) {
+            (x = 1), (y = 2)
+            console.log(x)
+        }
+        console.log(x)
+        console.log(y)
+    })()
+
+    // 1 undefined 2
+
+
+    // Вопрос № 32
+    const result =
+        [[0, 1], [2, 3]].reduce(
+            (acc, cur) => {
+                return acc.concat(cur)
+            },
+            [1, 2]
+        )
+
+    console.log(result)
+
+
+    // [1, 2, 0, 1, 2, 3]
+
+    // Вопрос № 33
+    console.log(!!null)
+    console.log(!!"")
+    console.log(!!1)
+
+    // false false true
+
+
+
 </script>
 </body>
 </html>
