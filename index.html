@@ -467,6 +467,23 @@
 
 
 
+    // Вопрос № 42
+    function greeting() {
+        throw "Всем привет!"
+    }
+
+    function sayHi() {
+        try {
+            const data = greeting()
+            console.log("Работает!", data)
+        } catch (error) {
+            console.log("Ошибка: ", error)
+        }
+    }
+
+    sayHi()
+
+    // Ошибка: Всем привет!
 
 
 </script>
