@@ -510,7 +510,26 @@
     // undefined и number
 
 
+    // Вопрос № 45
+    class Dog {
+        constructor(name) {
+            this.name = name
+        }
+    }
 
+    Dog.prototype.bark = function() {
+        console.log(`Woof I am ${this.name}`)
+    }
+
+    const pet = new Dog("Rex")
+
+    pet.bark()
+
+    delete Dog.prototype.bark
+
+    pet.bark()
+
+    // "Woof I am Rex" и ошибка
 
 </script>
 </body>
